@@ -115,4 +115,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get themeSystem => 'System';
+
+  @override
+  String get privacyTitle => 'Datenschutz';
+
+  @override
+  String get privacyHeader => 'Datenschutzerklärung';
+
+  @override
+  String get privacyContent =>
+      'Diese Website speichert keine personenbezogenen Daten, setzt keine Cookies ein und verwendet keine Tracking- oder Analysetools, die personenbezogene Daten erfassen.\n\nWir nutzen die Google Search Console zur Überwachung und Optimierung unserer Website. Dabei werden ausschließlich aggregierte, nicht personenbezogene Daten verarbeitet. Ein Rückschluss auf einzelne Besucher ist nicht möglich.\n\nBeim Besuch der Seite kann GitHub Pages (als Hosting-Provider) automatisch technische Informationen erfassen (z. B. IP-Adresse, Browsertyp, Betriebssystem). Diese Verarbeitung erfolgt durch GitHub Pages gemäß deren Datenschutzerklärung. Auf diese Daten habe ich keinen direkten Zugriff.\n\nExterne Links öffnen in einem neuen Tab. Beim Klicken gelten die Datenschutzbestimmungen der jeweiligen Anbieter.\n\nBei Fragen zum Datenschutz wenden Sie sich bitte per E-Mail an mich.';
 }

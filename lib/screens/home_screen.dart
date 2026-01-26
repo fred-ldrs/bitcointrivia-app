@@ -3,6 +3,7 @@ import '../l10n/app_localizations.dart';
 import 'support_screen.dart';
 import 'impressum_screen.dart';
 import 'settings_screen.dart';
+import 'privacy_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -70,7 +71,12 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 40),
 
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const PrivacyScreen()),
+                  );
+                },
                 child: Text(l10n.privacy),
               ),
               TextButton(

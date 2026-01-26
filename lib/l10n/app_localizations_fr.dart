@@ -116,4 +116,14 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get themeSystem => 'Système';
+
+  @override
+  String get privacyTitle => 'Politique de confidentialité';
+
+  @override
+  String get privacyHeader => 'Politique de confidentialité';
+
+  @override
+  String get privacyContent =>
+      'Ce site web ne stocke aucune donnée personnelle, n\'utilise pas de cookies et n\'utilise pas d\'outils de suivi ou d\'analyse qui collectent des données personnelles.\n\nNous utilisons Google Search Console pour surveiller et optimiser notre site web. Seules des données agrégées et non personnelles sont traitées. Il n\'est pas possible de remonter jusqu\'aux visiteurs individuels.\n\nLors de la visite du site, GitHub Pages (en tant que fournisseur d\'hébergement) peut automatiquement collecter des informations techniques (par exemple, adresse IP, type de navigateur, système d\'exploitation). Ce traitement est effectué par GitHub Pages conformément à leur politique de confidentialité. Je n\'ai pas d\'accès direct à ces données.\n\nLes liens externes s\'ouvrent dans un nouvel onglet. En cliquant, les politiques de confidentialité des fournisseurs respectifs s\'appliquent.\n\nPour toute question concernant la confidentialité, veuillez me contacter par e-mail.';
 }
