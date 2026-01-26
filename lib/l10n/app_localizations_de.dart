@@ -103,4 +103,16 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get languageFrench => 'Französisch';
+
+  @override
+  String get theme => 'Design';
+
+  @override
+  String get themeLight => 'Hell';
+
+  @override
+  String get themeDark => 'Dunkel';
+
+  @override
+  String get themeSystem => 'System';
 }

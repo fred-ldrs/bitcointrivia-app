@@ -30,5 +30,9 @@
   "language": "Langue",
   "languageEnglish": "Anglais",
   "languageGerman": "Allemand",
-  "languageFrench": "Français"
+  "languageFrench": "Français",
+  "theme": "Thème",
+  "themeLight": "Clair",
+  "themeDark": "Sombre",
+  "themeSystem": "Système"
 }

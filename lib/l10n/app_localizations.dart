@@ -285,6 +285,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'French'**
   String get languageFrench;
+
+  /// Theme setting label
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get theme;
+
+  /// Light theme option
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get themeLight;
+
+  /// Dark theme option
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get themeDark;
+
+  /// System theme option
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get themeSystem;
 }
 
 class _AppLocalizationsDelegate

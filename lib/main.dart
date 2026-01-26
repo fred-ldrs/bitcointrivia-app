@@ -4,11 +4,15 @@ import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'l10n/app_localizations.dart';
 import 'providers/locale_provider.dart';
+import 'providers/theme_provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => LocaleProvider(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => LocaleProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+      ],
       child: const BitcoinTriviaApp(),
     ),
   );
@@ -20,10 +24,12 @@ class BitcoinTriviaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);
+    final themeProvider = Provider.of<ThemeProvider>(context);
     
     return MaterialApp(
       title: 'Bitcoin Trivia',
       locale: localeProvider.locale,
+      themeMode: themeProvider.themeMode,
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
@@ -36,7 +42,18 @@ class BitcoinTriviaApp extends StatelessWidget {
         Locale('fr'),
       ],
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.orange,
+          brightness: Brightness.light,
+        ),
+      ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.orange,
+          brightness: Brightness.dark,
+        ),
       ),
       home: const HomeScreen(),
     );
