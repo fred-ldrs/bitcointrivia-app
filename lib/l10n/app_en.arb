@@ -1,0 +1,127 @@
+{
+  "@@locale": "en",
+  "appTitle": "Bitcoin Trivia",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "startQuiz": "Start Quiz",
+  "@startQuiz": {
+    "description": "Button text to start the quiz"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings menu item"
+  },
+  "feedback": "Feedback",
+  "@feedback": {
+    "description": "Feedback menu item"
+  },
+  "supportProject": "Support the Project",
+  "@supportProject": {
+    "description": "Support menu item"
+  },
+  "privacy": "Privacy Policy",
+  "@privacy": {
+    "description": "Privacy policy menu item"
+  },
+  "impressum": "Legal Notice",
+  "@impressum": {
+    "description": "Impressum/Legal notice menu item"
+  },
+  "supportTitle": "Support the Project",
+  "@supportTitle": {
+    "description": "Title of the support screen"
+  },
+  "supportBitcoinTrivia": "Support Bitcoin Trivia",
+  "@supportBitcoinTrivia": {
+    "description": "Header text on support screen"
+  },
+  "supportDescription": "If you like the project, you can support it in various ways.",
+  "@supportDescription": {
+    "description": "Description text on support screen"
+  },
+  "bitcoinDonation": "Bitcoin Donation",
+  "@bitcoinDonation": {
+    "description": "Bitcoin donation option title"
+  },
+  "bitcoinDonationSubtitle": "Support us directly via Lightning or On-Chain.",
+  "@bitcoinDonationSubtitle": {
+    "description": "Bitcoin donation option subtitle"
+  },
+  "paypal": "PayPal",
+  "@paypal": {
+    "description": "PayPal option title"
+  },
+  "paypalSubtitle": "Simple and quick support.",
+  "@paypalSubtitle": {
+    "description": "PayPal option subtitle"
+  },
+  "affiliatePrograms": "Affiliate Programs",
+  "@affiliatePrograms": {
+    "description": "Affiliate programs section header"
+  },
+  "bitboxWallet": "BitBox Hardware Wallet",
+  "@bitboxWallet": {
+    "description": "BitBox wallet affiliate title"
+  },
+  "bitboxSubtitle": "Recommended for secure Bitcoin storage.",
+  "@bitboxSubtitle": {
+    "description": "BitBox wallet subtitle"
+  },
+  "ledgerWallet": "Ledger Wallet",
+  "@ledgerWallet": {
+    "description": "Ledger wallet affiliate title"
+  },
+  "ledgerSubtitle": "Alternative hardware wallet option.",
+  "@ledgerSubtitle": {
+    "description": "Ledger wallet subtitle"
+  },
+  "cointracking": "CoinTracking",
+  "@cointracking": {
+    "description": "CoinTracking affiliate title"
+  },
+  "cointrackingSubtitle": "Portfolio tracking and tax tools.",
+  "@cointrackingSubtitle": {
+    "description": "CoinTracking subtitle"
+  },
+  "thankYou": "Thank you for your support!",
+  "@thankYou": {
+    "description": "Thank you message on support screen"
+  },
+  "impressumTitle": "Legal Notice",
+  "@impressumTitle": {
+    "description": "Title of the impressum screen"
+  },
+  "impressumHeader": "Legal Notice",
+  "@impressumHeader": {
+    "description": "Header on impressum screen"
+  },
+  "impressumLegalReference": "Information according to § 5 DDG",
+  "@impressumLegalReference": {
+    "description": "Legal reference text"
+  },
+  "impressumResponsible": "Responsible for content according to § 55 Abs. 2 RStV",
+  "@impressumResponsible": {
+    "description": "Responsible for content label"
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Title of the settings screen"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "English language option"
+  },
+  "languageGerman": "German",
+  "@languageGerman": {
+    "description": "German language option"
+  },
+  "languageFrench": "French",
+  "@languageFrench": {
+    "description": "French language option"
+  }
+}

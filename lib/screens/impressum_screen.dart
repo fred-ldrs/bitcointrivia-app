@@ -1,28 +1,31 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
 
 class ImpressumScreen extends StatelessWidget {
   const ImpressumScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Impressum'),
+        title: Text(l10n.impressumTitle),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          const Text(
-            'Impressum',
-            style: TextStyle(
+          Text(
+            l10n.impressumHeader,
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Angaben gemäß § 5 DDG',
-            style: TextStyle(
+          Text(
+            l10n.impressumLegalReference,
+            style: const TextStyle(
               fontSize: 14,
               fontStyle: FontStyle.italic,
               color: Colors.grey,
@@ -73,9 +76,9 @@ class ImpressumScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 32),
-          const Text(
-            'Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV',
-            style: TextStyle(
+          Text(
+            l10n.impressumResponsible,
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
             ),

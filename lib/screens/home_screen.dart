@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
 import 'support_screen.dart';
 import 'impressum_screen.dart';
+import 'settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bitcoin Trivia'),
+        title: Text(l10n.appTitle),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -34,18 +38,23 @@ class HomeScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                child: const Text('Start Quiz'),
+                child: Text(l10n.startQuiz),
               ),
 
               const SizedBox(height: 30),
 
               TextButton(
-                onPressed: () {},
-                child: const Text('Einstellungen'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                  );
+                },
+                child: Text(l10n.settings),
               ),
               TextButton(
                 onPressed: () {},
-                child: const Text('Feedback'),
+                child: Text(l10n.feedback),
               ),
               
               TextButton(
@@ -55,14 +64,14 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => SupportScreen()),
                   );
                 },
-                child: const Text('Support the Project'),
+                child: Text(l10n.supportProject),
               ),
 
               const SizedBox(height: 40),
 
               TextButton(
                 onPressed: () {},
-                child: const Text('Datenschutz'),
+                child: Text(l10n.privacy),
               ),
               TextButton(
                 onPressed: () {
@@ -71,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => ImpressumScreen()),
                   );
                 },
-                child: const Text('Impressum'),
+                child: Text(l10n.impressum),
               ),
             ],
           ),
