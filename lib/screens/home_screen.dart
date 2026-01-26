@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'support_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,22 +11,64 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Bitcoin Trivia'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/BitcoinTriviaV3.png',
-              width: 180,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Willkommen zu Bitcoin Trivia!',
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/BitcoinTriviaV3.png',
+                width: 180,
               ),
-            ),
-          ],
+              const SizedBox(height: 40),
+
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 40,
+                    vertical: 16,
+                  ),
+                  textStyle: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                child: const Text('Start Quiz'),
+              ),
+
+              const SizedBox(height: 30),
+
+              TextButton(
+                onPressed: () {},
+                child: const Text('Einstellungen'),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: const Text('Feedback'),
+              ),
+              
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SupportScreen()),
+                  );
+                },
+                child: const Text('Support the Project'),
+              ),
+
+              const SizedBox(height: 40),
+
+              TextButton(
+                onPressed: () {},
+                child: const Text('Datenschutz'),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: const Text('Impressum'),
+              ),
+            ],
+          ),
         ),
       ),
     );
