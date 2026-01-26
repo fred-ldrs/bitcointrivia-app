@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'support_screen.dart';
+import 'impressum_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -64,7 +65,12 @@ class HomeScreen extends StatelessWidget {
                 child: const Text('Datenschutz'),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,  
+                    MaterialPageRoute(builder: (context) => ImpressumScreen()),
+                  );
+                },
                 child: const Text('Impressum'),
               ),
             ],
