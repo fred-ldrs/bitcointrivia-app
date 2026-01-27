@@ -40,12 +40,10 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).brightness == Brightness.light
-                      ? const Color(0xFFF7931A) // Bitcoin Orange im hellen Modus
-                      : null, // Standard-Farbe im dunklen Modus
+                  backgroundColor: const Color(0xFFF7931A), // Bitcoin Orange immer
                   foregroundColor: Theme.of(context).brightness == Brightness.light
-                      ? Colors.black
-                      : null,
+                      ? Colors.black // Schwarzer Text im hellen Modus
+                      : Colors.white, // Weißer Text im dunklen Modus
                   padding: const EdgeInsets.symmetric(
                     horizontal: 40,
                     vertical: 16,
