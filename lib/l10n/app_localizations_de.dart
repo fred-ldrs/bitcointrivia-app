@@ -125,4 +125,125 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get privacyContent =>
       'Diese Website speichert keine personenbezogenen Daten, setzt keine Cookies ein und verwendet keine Tracking- oder Analysetools, die personenbezogene Daten erfassen.\n\nWir nutzen die Google Search Console zur Überwachung und Optimierung unserer Website. Dabei werden ausschließlich aggregierte, nicht personenbezogene Daten verarbeitet. Ein Rückschluss auf einzelne Besucher ist nicht möglich.\n\nBeim Besuch der Seite kann GitHub Pages (als Hosting-Provider) automatisch technische Informationen erfassen (z. B. IP-Adresse, Browsertyp, Betriebssystem). Diese Verarbeitung erfolgt durch GitHub Pages gemäß deren Datenschutzerklärung. Auf diese Daten habe ich keinen direkten Zugriff.\n\nExterne Links öffnen in einem neuen Tab. Beim Klicken gelten die Datenschutzbestimmungen der jeweiligen Anbieter.\n\nBei Fragen zum Datenschutz wenden Sie sich bitte per E-Mail an mich.';
+
+  @override
+  String get quizConfiguration => 'Quiz-Konfiguration';
+
+  @override
+  String get difficulty => 'Schwierigkeit';
+
+  @override
+  String get difficultyEasy => 'Einfach';
+
+  @override
+  String get difficultyNormal => 'Normal';
+
+  @override
+  String get difficultyDifficult => 'Schwierig';
+
+  @override
+  String get categories => 'Kategorien';
+
+  @override
+  String get categoryHistory => 'Geschichte';
+
+  @override
+  String get categoryTechnology => 'Technologie';
+
+  @override
+  String get categoryEconomics => 'Wirtschaft';
+
+  @override
+  String get categoryGeneral => 'Allgemein';
+
+  @override
+  String get numberOfQuestions => 'Fragenanzahl';
+
+  @override
+  String get customAmount => 'Freie Eingabe';
+
+  @override
+  String availableQuestions(int count) {
+    return '$count Fragen verfügbar';
+  }
+
+  @override
+  String get selectAtLeastOneCategory =>
+      'Bitte wählen Sie mindestens eine Kategorie';
+
+  @override
+  String get invalidQuestionCount =>
+      'Bitte geben Sie eine gültige Fragenanzahl ein';
+
+  @override
+  String notEnoughQuestions(int count) {
+    return 'Nur $count Fragen mit aktuellen Einstellungen verfügbar';
+  }
+
+  @override
+  String get quiz => 'Quiz';
+
+  @override
+  String questionNumber(int current, int total) {
+    return 'Frage $current von $total';
+  }
+
+  @override
+  String get nextQuestion => 'Nächste Frage';
+
+  @override
+  String get finishQuiz => 'Quiz beenden';
+
+  @override
+  String get quitQuiz => 'Quiz verlassen?';
+
+  @override
+  String get quitQuizMessage =>
+      'Möchten Sie das Quiz wirklich verlassen? Ihr Fortschritt geht verloren.';
+
+  @override
+  String get cancel => 'Abbrechen';
+
+  @override
+  String get quit => 'Verlassen';
+
+  @override
+  String get noQuestionsAvailable =>
+      'Keine Fragen mit aktuellen Einstellungen verfügbar';
+
+  @override
+  String get quizResult => 'Quiz-Ergebnis';
+
+  @override
+  String get resultPerfect => 'Perfekt!';
+
+  @override
+  String get resultExcellent => 'Ausgezeichnet!';
+
+  @override
+  String get resultGood => 'Gut gemacht!';
+
+  @override
+  String get resultNeedsImprovement => 'Weiter lernen!';
+
+  @override
+  String get resultKeepPracticing => 'Weiter üben!';
+
+  @override
+  String get correctAnswers => 'Richtige Antworten';
+
+  @override
+  String get wrongAnswers => 'Falsche Antworten';
+
+  @override
+  String get totalQuestions => 'Gesamte Fragen';
+
+  @override
+  String get errorsByCategory => 'Fehler nach Kategorie';
+
+  @override
+  String get backToHome => 'Zurück zur Startseite';
+
+  @override
+  String get newQuiz => 'Neues Quiz';
 }

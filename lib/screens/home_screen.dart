@@ -4,6 +4,8 @@ import 'support_screen.dart';
 import 'impressum_screen.dart';
 import 'settings_screen.dart';
 import 'privacy_screen.dart';
+import 'quiz_config_screen.dart';
+import 'database_debug_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,7 +30,14 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 40),
 
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const QuizConfigScreen(),
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 40,
@@ -87,6 +96,17 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: Text(l10n.impressum),
+              ),
+              
+              // Debug Button
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const DatabaseDebugScreen()),
+                  );
+                },
+                child: const Text('🔧 Database Debug'),
               ),
             ],
           ),

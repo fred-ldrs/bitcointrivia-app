@@ -37,5 +37,66 @@
   "themeSystem": "Système",
   "privacyTitle": "Politique de confidentialité",
   "privacyHeader": "Politique de confidentialité",
-  "privacyContent": "Ce site web ne stocke aucune donnée personnelle, n'utilise pas de cookies et n'utilise pas d'outils de suivi ou d'analyse qui collectent des données personnelles.\n\nNous utilisons Google Search Console pour surveiller et optimiser notre site web. Seules des données agrégées et non personnelles sont traitées. Il n'est pas possible de remonter jusqu'aux visiteurs individuels.\n\nLors de la visite du site, GitHub Pages (en tant que fournisseur d'hébergement) peut automatiquement collecter des informations techniques (par exemple, adresse IP, type de navigateur, système d'exploitation). Ce traitement est effectué par GitHub Pages conformément à leur politique de confidentialité. Je n'ai pas d'accès direct à ces données.\n\nLes liens externes s'ouvrent dans un nouvel onglet. En cliquant, les politiques de confidentialité des fournisseurs respectifs s'appliquent.\n\nPour toute question concernant la confidentialité, veuillez me contacter par e-mail."
+  "privacyContent": "Ce site web ne stocke aucune donnée personnelle, n'utilise pas de cookies et n'utilise pas d'outils de suivi ou d'analyse qui collectent des données personnelles.\n\nNous utilisons Google Search Console pour surveiller et optimiser notre site web. Seules des données agrégées et non personnelles sont traitées. Il n'est pas possible de remonter jusqu'aux visiteurs individuels.\n\nLors de la visite du site, GitHub Pages (en tant que fournisseur d'hébergement) peut automatiquement collecter des informations techniques (par exemple, adresse IP, type de navigateur, système d'exploitation). Ce traitement est effectué par GitHub Pages conformément à leur politique de confidentialité. Je n'ai pas d'accès direct à ces données.\n\nLes liens externes s'ouvrent dans un nouvel onglet. En cliquant, les politiques de confidentialité des fournisseurs respectifs s'appliquent.\n\nPour toute question concernant la confidentialité, veuillez me contacter par e-mail.",
+  "quizConfiguration": "Configuration du Quiz",
+  "difficulty": "Difficulté",
+  "difficultyEasy": "Facile",
+  "difficultyNormal": "Normal",
+  "difficultyDifficult": "Difficile",
+  "categories": "Catégories",
+  "categoryHistory": "Histoire",
+  "categoryTechnology": "Technologie",
+  "categoryEconomics": "Économie",
+  "categoryGeneral": "Général",
+  "numberOfQuestions": "Nombre de questions",
+  "customAmount": "Montant personnalisé",
+  "availableQuestions": "{count} questions disponibles",
+  "@availableQuestions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "selectAtLeastOneCategory": "Veuillez sélectionner au moins une catégorie",
+  "invalidQuestionCount": "Veuillez entrer un nombre de questions valide",
+  "notEnoughQuestions": "Seulement {count} questions disponibles avec les paramètres actuels",
+  "@notEnoughQuestions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "quiz": "Quiz",
+  "questionNumber": "Question {current} sur {total}",
+  "@questionNumber": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "nextQuestion": "Question suivante",
+  "finishQuiz": "Terminer le quiz",
+  "quitQuiz": "Quitter le quiz ?",
+  "quitQuizMessage": "Êtes-vous sûr de vouloir quitter ? Votre progression sera perdue.",
+  "cancel": "Annuler",
+  "quit": "Quitter",
+  "noQuestionsAvailable": "Aucune question disponible avec les paramètres actuels",
+  "quizResult": "Résultat du quiz",
+  "resultPerfect": "Parfait !",
+  "resultExcellent": "Excellent !",
+  "resultGood": "Bon travail !",
+  "resultNeedsImprovement": "Continuez à apprendre !",
+  "resultKeepPracticing": "Continuez à pratiquer !",
+  "correctAnswers": "Réponses correctes",
+  "wrongAnswers": "Réponses incorrectes",
+  "totalQuestions": "Questions totales",
+  "errorsByCategory": "Erreurs par catégorie",
+  "backToHome": "Retour à l'accueil",
+  "newQuiz": "Nouveau quiz"
 }

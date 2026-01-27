@@ -151,5 +151,66 @@
   "privacyContent": "This website does not store any personal data, does not use cookies, and does not use tracking or analytics tools that collect personal data.\n\nWe use Google Search Console to monitor and optimize our website. Only aggregated, non-personal data is processed. Tracing back to individual visitors is not possible.\n\nWhen visiting the site, GitHub Pages (as hosting provider) may automatically collect technical information (e.g., IP address, browser type, operating system). This processing is carried out by GitHub Pages in accordance with their privacy policy. I do not have direct access to this data.\n\nExternal links open in a new tab. When clicking, the privacy policies of the respective providers apply.\n\nIf you have any questions about privacy, please contact me by email.",
   "@privacyContent": {
     "description": "Privacy policy content text"
-  }
+  },
+  "quizConfiguration": "Quiz Configuration",
+  "difficulty": "Difficulty",
+  "difficultyEasy": "Easy",
+  "difficultyNormal": "Normal",
+  "difficultyDifficult": "Difficult",
+  "categories": "Categories",
+  "categoryHistory": "History",
+  "categoryTechnology": "Technology",
+  "categoryEconomics": "Economics",
+  "categoryGeneral": "General",
+  "numberOfQuestions": "Number of Questions",
+  "customAmount": "Custom Amount",
+  "availableQuestions": "{count} questions available",
+  "@availableQuestions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "selectAtLeastOneCategory": "Please select at least one category",
+  "invalidQuestionCount": "Please enter a valid number of questions",
+  "notEnoughQuestions": "Only {count} questions available with current settings",
+  "@notEnoughQuestions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "quiz": "Quiz",
+  "questionNumber": "Question {current} of {total}",
+  "@questionNumber": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "nextQuestion": "Next Question",
+  "finishQuiz": "Finish Quiz",
+  "quitQuiz": "Quit Quiz?",
+  "quitQuizMessage": "Are you sure you want to quit? Your progress will be lost.",
+  "cancel": "Cancel",
+  "quit": "Quit",
+  "noQuestionsAvailable": "No questions available with current settings",
+  "quizResult": "Quiz Result",
+  "resultPerfect": "Perfect!",
+  "resultExcellent": "Excellent!",
+  "resultGood": "Good Job!",
+  "resultNeedsImprovement": "Keep Learning!",
+  "resultKeepPracticing": "Keep Practicing!",
+  "correctAnswers": "Correct Answers",
+  "wrongAnswers": "Wrong Answers",
+  "totalQuestions": "Total Questions",
+  "errorsByCategory": "Errors by Category",
+  "backToHome": "Back to Home",
+  "newQuiz": "New Quiz"
 }

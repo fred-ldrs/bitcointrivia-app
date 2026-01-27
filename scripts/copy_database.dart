@@ -23,6 +23,12 @@ void main() async {
     print('Zielverzeichnis erstellt: ${targetDbDir.path}');
   }
 
+  // Lösche alte Datei falls vorhanden
+  if (await targetDb.exists()) {
+    await targetDb.delete();
+    print('Alte Datenbank gelöscht');
+  }
+
   // Kopiere Datei
   await sourceDb.copy(targetDb.path);
   

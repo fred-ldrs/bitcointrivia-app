@@ -327,6 +327,228 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This website does not store any personal data, does not use cookies, and does not use tracking or analytics tools that collect personal data.\n\nWe use Google Search Console to monitor and optimize our website. Only aggregated, non-personal data is processed. Tracing back to individual visitors is not possible.\n\nWhen visiting the site, GitHub Pages (as hosting provider) may automatically collect technical information (e.g., IP address, browser type, operating system). This processing is carried out by GitHub Pages in accordance with their privacy policy. I do not have direct access to this data.\n\nExternal links open in a new tab. When clicking, the privacy policies of the respective providers apply.\n\nIf you have any questions about privacy, please contact me by email.'**
   String get privacyContent;
+
+  /// No description provided for @quizConfiguration.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz Configuration'**
+  String get quizConfiguration;
+
+  /// No description provided for @difficulty.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficulty'**
+  String get difficulty;
+
+  /// No description provided for @difficultyEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy'**
+  String get difficultyEasy;
+
+  /// No description provided for @difficultyNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get difficultyNormal;
+
+  /// No description provided for @difficultyDifficult.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficult'**
+  String get difficultyDifficult;
+
+  /// No description provided for @categories.
+  ///
+  /// In en, this message translates to:
+  /// **'Categories'**
+  String get categories;
+
+  /// No description provided for @categoryHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get categoryHistory;
+
+  /// No description provided for @categoryTechnology.
+  ///
+  /// In en, this message translates to:
+  /// **'Technology'**
+  String get categoryTechnology;
+
+  /// No description provided for @categoryEconomics.
+  ///
+  /// In en, this message translates to:
+  /// **'Economics'**
+  String get categoryEconomics;
+
+  /// No description provided for @categoryGeneral.
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get categoryGeneral;
+
+  /// No description provided for @numberOfQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of Questions'**
+  String get numberOfQuestions;
+
+  /// No description provided for @customAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom Amount'**
+  String get customAmount;
+
+  /// No description provided for @availableQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} questions available'**
+  String availableQuestions(int count);
+
+  /// No description provided for @selectAtLeastOneCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Please select at least one category'**
+  String get selectAtLeastOneCategory;
+
+  /// No description provided for @invalidQuestionCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid number of questions'**
+  String get invalidQuestionCount;
+
+  /// No description provided for @notEnoughQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Only {count} questions available with current settings'**
+  String notEnoughQuestions(int count);
+
+  /// No description provided for @quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get quiz;
+
+  /// No description provided for @questionNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {current} of {total}'**
+  String questionNumber(int current, int total);
+
+  /// No description provided for @nextQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Next Question'**
+  String get nextQuestion;
+
+  /// No description provided for @finishQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish Quiz'**
+  String get finishQuiz;
+
+  /// No description provided for @quitQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Quit Quiz?'**
+  String get quitQuiz;
+
+  /// No description provided for @quitQuizMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to quit? Your progress will be lost.'**
+  String get quitQuizMessage;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @quit.
+  ///
+  /// In en, this message translates to:
+  /// **'Quit'**
+  String get quit;
+
+  /// No description provided for @noQuestionsAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'No questions available with current settings'**
+  String get noQuestionsAvailable;
+
+  /// No description provided for @quizResult.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz Result'**
+  String get quizResult;
+
+  /// No description provided for @resultPerfect.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect!'**
+  String get resultPerfect;
+
+  /// No description provided for @resultExcellent.
+  ///
+  /// In en, this message translates to:
+  /// **'Excellent!'**
+  String get resultExcellent;
+
+  /// No description provided for @resultGood.
+  ///
+  /// In en, this message translates to:
+  /// **'Good Job!'**
+  String get resultGood;
+
+  /// No description provided for @resultNeedsImprovement.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Learning!'**
+  String get resultNeedsImprovement;
+
+  /// No description provided for @resultKeepPracticing.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Practicing!'**
+  String get resultKeepPracticing;
+
+  /// No description provided for @correctAnswers.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct Answers'**
+  String get correctAnswers;
+
+  /// No description provided for @wrongAnswers.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong Answers'**
+  String get wrongAnswers;
+
+  /// No description provided for @totalQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Questions'**
+  String get totalQuestions;
+
+  /// No description provided for @errorsByCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Errors by Category'**
+  String get errorsByCategory;
+
+  /// No description provided for @backToHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Home'**
+  String get backToHome;
+
+  /// No description provided for @newQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'New Quiz'**
+  String get newQuiz;
 }
 
 class _AppLocalizationsDelegate
