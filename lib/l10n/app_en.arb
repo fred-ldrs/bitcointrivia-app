@@ -80,11 +80,25 @@
   "@cointracking": {
     "description": "CoinTracking affiliate title"
   },
-  "cointrackingSubtitle": "Portfolio tracking and tax tools.",
+  "cointrackingSubtitle": "Portfolio tracking and tax tools. 10% discount!",
   "@cointrackingSubtitle": {
     "description": "CoinTracking subtitle"
   },
-  "thankYou": "Thank you for your support!",
+  "blockpit": "Blockpit",
+  "blockpitSubtitle": "Portfolio tracking and tax tools. 15% discount!",
+  "bisonApp": "BISON App",
+  "bisonAppSubtitle": "Easy and secure crypto trading platform.",
+  "bitvavo": "Bitvavo",
+  "bitvavoSubtitle": "Trade €10,000 without fees.",
+  "jadeWallet": "Blockstream Jade Wallet",
+  "jadeWalletSubtitle": "Secure hardware wallet from Blockstream.",
+  "buyBitcoin": "Buy Bitcoin",
+  "storeBitcoin": "Store Bitcoin",
+  "taxAndTracking": "Tax & Tracking",
+  "donate": "Donate",
+  "bitcoinDonationViaOpenNode": "Support us with Bitcoin through OpenNode - the preferred way!",
+  "paypalDonationSubtitle": "For those who prefer to use traditional payment methods.",
+  "thankYou": "🧡 Thank you for your support! 🧡",
   "@thankYou": {
     "description": "Thank you message on support screen"
   },
@@ -212,5 +226,19 @@
   "totalQuestions": "Total Questions",
   "errorsByCategory": "Errors by Category",
   "backToHome": "Back to Home",
-  "newQuiz": "New Quiz"
+  "newQuiz": "New Quiz",
+  "blockpit": "Blockpit",
+  "blockpitSubtitle": "Portfolio tracking and tax tools. 15% discount!",
+  "bisonApp": "BISON App",
+  "bisonAppSubtitle": "Easy and secure crypto trading platform.",
+  "bitvavo": "Bitvavo",
+  "bitvavoSubtitle": "Trade €10,000 without fees.",
+  "jadeWallet": "Blockstream Jade Wallet",
+  "jadeWalletSubtitle": "Secure hardware wallet from Blockstream.",
+  "buyBitcoin": "Buy Bitcoin",
+  "storeBitcoin": "Store Bitcoin",
+  "taxAndTracking": "Tax & Tracking",
+  "donate": "Donate",
+  "bitcoinDonationViaOpenNode": "Support us with Bitcoin through OpenNode - the preferred way!",
+  "paypalDonationSubtitle": "For those who prefer to use traditional payment methods."
 }

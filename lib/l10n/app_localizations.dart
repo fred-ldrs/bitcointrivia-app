@@ -223,13 +223,97 @@ abstract class AppLocalizations {
   /// CoinTracking subtitle
   ///
   /// In en, this message translates to:
-  /// **'Portfolio tracking and tax tools.'**
+  /// **'Portfolio tracking and tax tools. 10% discount!'**
   String get cointrackingSubtitle;
+
+  /// No description provided for @blockpit.
+  ///
+  /// In en, this message translates to:
+  /// **'Blockpit'**
+  String get blockpit;
+
+  /// No description provided for @blockpitSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio tracking and tax tools. 15% discount!'**
+  String get blockpitSubtitle;
+
+  /// No description provided for @bisonApp.
+  ///
+  /// In en, this message translates to:
+  /// **'BISON App'**
+  String get bisonApp;
+
+  /// No description provided for @bisonAppSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy and secure crypto trading platform.'**
+  String get bisonAppSubtitle;
+
+  /// No description provided for @bitvavo.
+  ///
+  /// In en, this message translates to:
+  /// **'Bitvavo'**
+  String get bitvavo;
+
+  /// No description provided for @bitvavoSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Trade €10,000 without fees.'**
+  String get bitvavoSubtitle;
+
+  /// No description provided for @jadeWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Blockstream Jade Wallet'**
+  String get jadeWallet;
+
+  /// No description provided for @jadeWalletSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure hardware wallet from Blockstream.'**
+  String get jadeWalletSubtitle;
+
+  /// No description provided for @buyBitcoin.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy Bitcoin'**
+  String get buyBitcoin;
+
+  /// No description provided for @storeBitcoin.
+  ///
+  /// In en, this message translates to:
+  /// **'Store Bitcoin'**
+  String get storeBitcoin;
+
+  /// No description provided for @taxAndTracking.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax & Tracking'**
+  String get taxAndTracking;
+
+  /// No description provided for @donate.
+  ///
+  /// In en, this message translates to:
+  /// **'Donate'**
+  String get donate;
+
+  /// No description provided for @bitcoinDonationViaOpenNode.
+  ///
+  /// In en, this message translates to:
+  /// **'Support us with Bitcoin through OpenNode - the preferred way!'**
+  String get bitcoinDonationViaOpenNode;
+
+  /// No description provided for @paypalDonationSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'For those who prefer to use traditional payment methods.'**
+  String get paypalDonationSubtitle;
 
   /// Thank you message on support screen
   ///
   /// In en, this message translates to:
-  /// **'Thank you for your support!'**
+  /// **'🧡 Thank you for your support! 🧡'**
   String get thankYou;
 
   /// Title of the impressum screen

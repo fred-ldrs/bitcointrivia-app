@@ -71,10 +71,57 @@ class AppLocalizationsDe extends AppLocalizations {
   String get cointracking => 'CoinTracking';
 
   @override
-  String get cointrackingSubtitle => 'Portfolio-Tracking und Steuer-Tools.';
+  String get cointrackingSubtitle =>
+      'Portfolio-Tracking und Steuer-Tools. 10% Rabatt!';
 
   @override
-  String get thankYou => 'Danke für deine Unterstützung!';
+  String get blockpit => 'Blockpit';
+
+  @override
+  String get blockpitSubtitle =>
+      'Portfolio-Tracking und Steuer-Tools. 15% Rabatt!';
+
+  @override
+  String get bisonApp => 'BISON App';
+
+  @override
+  String get bisonAppSubtitle =>
+      'Einfache und sichere Krypto-Handelsplattform.';
+
+  @override
+  String get bitvavo => 'Bitvavo';
+
+  @override
+  String get bitvavoSubtitle => '€10.000 ohne Gebühren handeln.';
+
+  @override
+  String get jadeWallet => 'Blockstream Jade Wallet';
+
+  @override
+  String get jadeWalletSubtitle => 'Sichere Hardware-Wallet von Blockstream.';
+
+  @override
+  String get buyBitcoin => 'Bitcoin kaufen';
+
+  @override
+  String get storeBitcoin => 'Bitcoin sichern';
+
+  @override
+  String get taxAndTracking => 'Steuer & Tracking';
+
+  @override
+  String get donate => 'Spenden';
+
+  @override
+  String get bitcoinDonationViaOpenNode =>
+      'Bitcoin-Spende über OpenNode - der bevorzugte Weg!';
+
+  @override
+  String get paypalDonationSubtitle =>
+      'Für alle, die traditionelle Zahlungsmethoden bevorzugen.';
+
+  @override
+  String get thankYou => '🧡 Danke für deine Unterstützung! 🧡';
 
   @override
   String get impressumTitle => 'Impressum';
