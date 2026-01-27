@@ -148,13 +148,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get categoryHistory => 'History';
 
   @override
-  String get categoryTechnology => 'Technology';
+  String get categoryTech => 'Technology';
 
   @override
-  String get categoryEconomics => 'Economics';
+  String get categoryCulture => 'Culture';
 
   @override
-  String get categoryGeneral => 'General';
+  String get categoryGeneralKnowledge => 'General Knowledge';
 
   @override
   String get numberOfQuestions => 'Number of Questions';

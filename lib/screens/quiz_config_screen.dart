@@ -25,6 +25,23 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
   bool _customQuestionCount = false;
   final TextEditingController _customCountController = TextEditingController();
   
+  // Mapping von Kategorienamen zu Übersetzungsschlüsseln
+  String _getCategoryDisplayName(String category) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (category) {
+      case 'History':
+        return l10n.categoryHistory;
+      case 'Tech':
+        return l10n.categoryTech;
+      case 'Culture':
+        return l10n.categoryCulture;
+      case 'General Knowledge':
+        return l10n.categoryGeneralKnowledge;
+      default:
+        return category;
+    }
+  }
+  
   int _availableQuestions = 0;
   bool _isLoading = true;
   bool _isInitialized = false;
@@ -205,7 +222,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                   ),
                   const SizedBox(height: 8),
                   CheckboxListTile(
-                    title: const Text('History'),
+                    title: Text(_getCategoryDisplayName('History')),
                     value: _selectedCategories.contains('History'),
                     onChanged: (bool? value) {
                       setState(() {
@@ -219,7 +236,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
                   CheckboxListTile(
-                    title: const Text('Tech'),
+                    title: Text(_getCategoryDisplayName('Tech')),
                     value: _selectedCategories.contains('Tech'),
                     onChanged: (bool? value) {
                       setState(() {
@@ -233,7 +250,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
                   CheckboxListTile(
-                    title: const Text('Culture'),
+                    title: Text(_getCategoryDisplayName('Culture')),
                     value: _selectedCategories.contains('Culture'),
                     onChanged: (bool? value) {
                       setState(() {
@@ -247,7 +264,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
                   CheckboxListTile(
-                    title: const Text('General Knowledge'),
+                    title: Text(_getCategoryDisplayName('General Knowledge')),
                     value: _selectedCategories.contains('General Knowledge'),
                     onChanged: (bool? value) {
                       setState(() {

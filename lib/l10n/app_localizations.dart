@@ -370,23 +370,23 @@ abstract class AppLocalizations {
   /// **'History'**
   String get categoryHistory;
 
-  /// No description provided for @categoryTechnology.
+  /// No description provided for @categoryTech.
   ///
   /// In en, this message translates to:
   /// **'Technology'**
-  String get categoryTechnology;
+  String get categoryTech;
 
-  /// No description provided for @categoryEconomics.
+  /// No description provided for @categoryCulture.
   ///
   /// In en, this message translates to:
-  /// **'Economics'**
-  String get categoryEconomics;
+  /// **'Culture'**
+  String get categoryCulture;
 
-  /// No description provided for @categoryGeneral.
+  /// No description provided for @categoryGeneralKnowledge.
   ///
   /// In en, this message translates to:
-  /// **'General'**
-  String get categoryGeneral;
+  /// **'General Knowledge'**
+  String get categoryGeneralKnowledge;
 
   /// No description provided for @numberOfQuestions.
   ///
