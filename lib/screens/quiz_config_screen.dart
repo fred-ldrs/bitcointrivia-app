@@ -400,6 +400,14 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     width: double.infinity,
                     child: FilledButton(
                       onPressed: _availableQuestions > 0 ? _startQuiz : null,
+                      style: FilledButton.styleFrom(
+                        backgroundColor: Theme.of(context).brightness == Brightness.light
+                            ? const Color(0xFFF7931A) // Bitcoin Orange im hellen Modus
+                            : null, // Standard-Farbe im dunklen Modus
+                        foregroundColor: Theme.of(context).brightness == Brightness.light
+                            ? Colors.white
+                            : null,
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(16),
                         child: Text(

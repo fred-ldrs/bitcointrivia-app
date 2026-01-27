@@ -168,6 +168,14 @@ class QuizResultScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.popUntil(context, (route) => route.isFirst);
                   },
+                  style: FilledButton.styleFrom(
+                    backgroundColor: Theme.of(context).brightness == Brightness.light
+                        ? const Color(0xFFF7931A) // Bitcoin Orange im hellen Modus
+                        : null, // Standard-Farbe im dunklen Modus
+                    foregroundColor: Theme.of(context).brightness == Brightness.light
+                        ? Colors.white
+                        : null,
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Text(
@@ -185,6 +193,11 @@ class QuizResultScreen extends StatelessWidget {
                     Navigator.pop(context);
                     Navigator.pop(context);
                   },
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Theme.of(context).brightness == Brightness.light
+                        ? Colors.black
+                        : null,
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Text(

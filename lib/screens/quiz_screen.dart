@@ -193,6 +193,7 @@ class _QuizScreenState extends State<QuizScreen> {
             child: LinearProgressIndicator(
               value: progress,
               backgroundColor: Colors.grey[300],
+              valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFFF7931A)), // Bitcoin Orange
             ),
           ),
         ),
@@ -271,6 +272,14 @@ class _QuizScreenState extends State<QuizScreen> {
               if (_hasAnswered)
                 FilledButton(
                   onPressed: _nextQuestion,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: Theme.of(context).brightness == Brightness.light
+                        ? const Color(0xFFF7931A) // Bitcoin Orange im hellen Modus
+                        : null, // Standard-Farbe im dunklen Modus
+                    foregroundColor: Theme.of(context).brightness == Brightness.light
+                        ? Colors.white
+                        : null,
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Text(

@@ -40,6 +40,12 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).brightness == Brightness.light
+                      ? const Color(0xFFF7931A) // Bitcoin Orange im hellen Modus
+                      : null, // Standard-Farbe im dunklen Modus
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 40,
                     vertical: 16,
@@ -61,6 +67,11 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const SettingsScreen()),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
+                ),
                 child: Text(l10n.settings),
               ),
               TextButton(
@@ -70,6 +81,11 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const FeedbackScreen()),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
+                ),
                 child: Text(l10n.feedback),
               ),
               
@@ -80,6 +96,11 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => SupportScreen()),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
+                ),
                 child: Text(l10n.supportProject),
               ),
 
@@ -92,6 +113,11 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const PrivacyScreen()),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
+                ),
                 child: Text(l10n.privacy),
               ),
               TextButton(
@@ -101,6 +127,11 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => ImpressumScreen()),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
+                ),
                 child: Text(l10n.impressum),
               ),
               

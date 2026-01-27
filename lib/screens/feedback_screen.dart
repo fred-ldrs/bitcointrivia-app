@@ -115,6 +115,14 @@ Version: $appVersion ($buildNumber)
             const SizedBox(height: 16),
             FilledButton(
               onPressed: _isLoading ? null : _sendFeedback,
+              style: FilledButton.styleFrom(
+                backgroundColor: Theme.of(context).brightness == Brightness.light
+                    ? const Color(0xFFF7931A) // Bitcoin Orange im hellen Modus
+                    : null, // Standard-Farbe im dunklen Modus
+                foregroundColor: Theme.of(context).brightness == Brightness.light
+                    ? Colors.black
+                    : null,
+              ),
               child: _isLoading
                   ? const SizedBox(
                       height: 20,
