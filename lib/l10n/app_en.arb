@@ -13,6 +13,11 @@
     "description": "Settings menu item"
   },
   "feedback": "Feedback",
+  "feedbackTitle": "Send Feedback",
+  "feedbackPlaceholder": "Write your feedback here...",
+  "feedbackSend": "Send",
+  "feedbackEmpty": "Please enter your feedback",
+  "feedbackEmailSubject": "Feedback from the App",
   "@feedback": {
     "description": "Feedback menu item"
   },

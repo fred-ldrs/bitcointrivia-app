@@ -21,6 +21,21 @@ class AppLocalizationsDe extends AppLocalizations {
   String get feedback => 'Feedback';
 
   @override
+  String get feedbackTitle => 'Feedback senden';
+
+  @override
+  String get feedbackPlaceholder => 'Schreibe dein Feedback hier...';
+
+  @override
+  String get feedbackSend => 'Absenden';
+
+  @override
+  String get feedbackEmpty => 'Bitte gib dein Feedback ein';
+
+  @override
+  String get feedbackEmailSubject => 'Feedback aus der App';
+
+  @override
   String get supportProject => 'Projekt unterstützen';
 
   @override

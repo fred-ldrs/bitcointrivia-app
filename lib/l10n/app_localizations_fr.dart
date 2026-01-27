@@ -21,6 +21,21 @@ class AppLocalizationsFr extends AppLocalizations {
   String get feedback => 'Commentaires';
 
   @override
+  String get feedbackTitle => 'Envoyer des commentaires';
+
+  @override
+  String get feedbackPlaceholder => 'Écrivez vos commentaires ici...';
+
+  @override
+  String get feedbackSend => 'Envoyer';
+
+  @override
+  String get feedbackEmpty => 'Veuillez entrer vos commentaires';
+
+  @override
+  String get feedbackEmailSubject => 'Commentaires de l\'application';
+
+  @override
   String get supportProject => 'Soutenir le projet';
 
   @override

@@ -6,6 +6,7 @@ import 'settings_screen.dart';
 import 'privacy_screen.dart';
 import 'quiz_config_screen.dart';
 import 'database_debug_screen.dart';
+import 'feedback_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -63,7 +64,12 @@ class HomeScreen extends StatelessWidget {
                 child: Text(l10n.settings),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const FeedbackScreen()),
+                  );
+                },
                 child: Text(l10n.feedback),
               ),
               

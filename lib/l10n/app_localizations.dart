@@ -124,6 +124,36 @@ abstract class AppLocalizations {
   /// **'Feedback'**
   String get feedback;
 
+  /// No description provided for @feedbackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Feedback'**
+  String get feedbackTitle;
+
+  /// No description provided for @feedbackPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Write your feedback here...'**
+  String get feedbackPlaceholder;
+
+  /// No description provided for @feedbackSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get feedbackSend;
+
+  /// No description provided for @feedbackEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your feedback'**
+  String get feedbackEmpty;
+
+  /// No description provided for @feedbackEmailSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback from the App'**
+  String get feedbackEmailSubject;
+
   /// Support menu item
   ///
   /// In en, this message translates to:
