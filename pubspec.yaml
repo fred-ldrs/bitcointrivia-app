@@ -64,6 +64,7 @@ flutter:
   assets:
     - assets/BitcoinTrivia_Logo.png
     - assets/BitcoinTriviaV3.png
+    - assets/db/questions.db
 
 
   # The following line ensures that the Material Icons font is
