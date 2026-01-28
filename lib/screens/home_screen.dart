@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import 'support_screen.dart';
@@ -133,16 +134,17 @@ class HomeScreen extends StatelessWidget {
                 child: Text(l10n.impressum),
               ),
               
-              // Debug Button
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const DatabaseDebugScreen()),
-                  );
-                },
-                child: const Text('🔧 Database Debug'),
-              ),
+              // Debug Button (nur in Debug-Builds sichtbar)
+              if (kDebugMode)
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const DatabaseDebugScreen()),
+                    );
+                  },
+                  child: const Text('🔧 Database Debug (Debug-Build)'),
+                ),
             ],
           ),
         ),
