@@ -40,7 +40,7 @@ class QuizResultScreen extends StatelessWidget {
           automaticallyImplyLeading: false,
         ),
         body: SingleChildScrollView(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.fromLTRB(24, 24, 24, 80),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
