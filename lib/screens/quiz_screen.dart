@@ -144,6 +144,17 @@ class _QuizScreenState extends State<QuizScreen> {
     return null;
   }
 
+  Color? _getAnswerIconColor(int answerIndex) {
+    if (!_hasAnswered) return null;
+
+    if (answerIndex == _currentCorrectIndex) {
+      return Colors.green;
+    } else if (answerIndex == _selectedAnswerIndex) {
+      return Colors.red;
+    }
+    return null;
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -241,6 +252,8 @@ class _QuizScreenState extends State<QuizScreen> {
                     final answer = _currentShuffledOptions[index];
                     final color = _getAnswerColor(index);
                     final icon = _getAnswerIcon(index);
+                    final iconColor = _getAnswerIconColor(index);
+                    final hasColoredBackground = color != null;
 
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 12),
@@ -256,10 +269,13 @@ class _QuizScreenState extends State<QuizScreen> {
                             Expanded(
                               child: Text(
                                 answer,
-                                style: const TextStyle(fontSize: 16),
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: hasColoredBackground ? Colors.black : null,
+                                ),
                               ),
                             ),
-                            if (icon != null) Icon(icon),
+                            if (icon != null) Icon(icon, color: iconColor),
                           ],
                         ),
                       ),
