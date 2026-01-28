@@ -58,17 +58,18 @@ Version: $appVersion ($buildNumber)
         }),
       );
 
-      // E-Mail-Client öffnen
-      if (await canLaunchUrl(emailUri)) {
-        await launchUrl(emailUri);
-      } else {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Could not open email app'),
-            ),
-          );
-        }
+      // E-Mail-Client öffnen - versuche direkt ohne canLaunchUrl
+      final launched = await launchUrl(
+        emailUri,
+        mode: LaunchMode.externalApplication,
+      );
+      
+      if (!launched && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Could not open email app'),
+          ),
+        );
       }
     } catch (e) {
       if (mounted) {
