@@ -179,7 +179,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 80),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -213,15 +213,17 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
 
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 20),
 
                   // Kategorien
                   Text(
                     l10n.categories,
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 4),
                   CheckboxListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 0),
+                    visualDensity: const VisualDensity(horizontal: 0, vertical: -2),
                     title: Text(_getCategoryDisplayName('History')),
                     value: _selectedCategories.contains('History'),
                     onChanged: (bool? value) {
@@ -236,6 +238,8 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
                   CheckboxListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 0),
+                    visualDensity: const VisualDensity(horizontal: 0, vertical: -2),
                     title: Text(_getCategoryDisplayName('Tech')),
                     value: _selectedCategories.contains('Tech'),
                     onChanged: (bool? value) {
@@ -250,6 +254,8 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
                   CheckboxListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 0),
+                    visualDensity: const VisualDensity(horizontal: 0, vertical: -2),
                     title: Text(_getCategoryDisplayName('Culture')),
                     value: _selectedCategories.contains('Culture'),
                     onChanged: (bool? value) {
@@ -264,6 +270,8 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
                   CheckboxListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 0),
+                    visualDensity: const VisualDensity(horizontal: 0, vertical: -2),
                     title: Text(_getCategoryDisplayName('General Knowledge')),
                     value: _selectedCategories.contains('General Knowledge'),
                     onChanged: (bool? value) {
@@ -278,7 +286,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     },
                   ),
 
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 16),
 
                   // Fragenanzahl
                   Text(
@@ -393,7 +401,7 @@ class _QuizConfigScreenState extends State<QuizConfigScreen> {
                     ),
                   ),
 
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 16),
 
                   // Start Button
                   SizedBox(
