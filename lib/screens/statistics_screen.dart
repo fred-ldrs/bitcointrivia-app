@@ -28,7 +28,7 @@ class _StatisticsScreenState extends State<StatisticsScreen> {
     
     _totalStats = await _statsService.getTotalStats();
     _easyStats = await _statsService.getStatsForDifficulty('easy');
-    _mediumStats = await _statsService.getStatsForDifficulty('medium');
+    _mediumStats = await _statsService.getStatsForDifficulty('normal');
     _difficultStats = await _statsService.getStatsForDifficulty('difficult');
     
     setState(() => _isLoading = false);

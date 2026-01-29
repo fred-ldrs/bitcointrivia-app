@@ -85,9 +85,9 @@
   "@easy": {
     "description": "Easy difficulty label"
   },
-  "medium": "Medium",
+  "medium": "Normal",
   "@medium": {
-    "description": "Medium difficulty label"
+    "description": "Normal difficulty label"
   },
   "difficult": "Hard",
   "@difficult": {

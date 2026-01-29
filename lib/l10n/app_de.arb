@@ -25,7 +25,7 @@
   "correct": "Richtig",
   "wrong": "Falsch",
   "easy": "Einfach",
-  "medium": "Mittel",
+  "medium": "Normal",
   "difficult": "Schwer",
   "resetStatistics": "Statistiken zurücksetzen",
   "resetStatisticsConfirmation": "Möchtest du wirklich alle Statistiken zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.",

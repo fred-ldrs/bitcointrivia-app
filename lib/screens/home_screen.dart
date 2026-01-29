@@ -2,12 +2,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import 'support_screen.dart';
-import 'impressum_screen.dart';
 import 'settings_screen.dart';
-import 'privacy_screen.dart';
 import 'quiz_config_screen.dart';
 import 'database_debug_screen.dart';
-import 'feedback_screen.dart';
 import 'statistics_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -42,14 +39,15 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFF7931A), // Bitcoin Orange immer
+                  backgroundColor: const Color(0xFFF7931A),
                   foregroundColor: Theme.of(context).brightness == Brightness.light
-                      ? Colors.black // Schwarzer Text im hellen Modus
-                      : Colors.white, // Weißer Text im dunklen Modus
+                      ? Colors.black
+                      : Colors.white,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 40,
                     vertical: 16,
                   ),
+                  minimumSize: const Size(200, 48),
                   textStyle: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -60,53 +58,64 @@ class HomeScreen extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              TextButton(
+              OutlinedButton.icon(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const StatisticsScreen()),
                   );
                 },
-                style: TextButton.styleFrom(
+                icon: const Icon(Icons.bar_chart),
+                label: Text(l10n.statistics),
+                style: OutlinedButton.styleFrom(
                   foregroundColor: Theme.of(context).brightness == Brightness.light
                       ? Colors.black
                       : null,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  minimumSize: const Size(200, 48),
                 ),
-                child: Text(l10n.statistics),
               ),
+              const SizedBox(height: 12),
 
-              TextButton(
+              OutlinedButton.icon(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const SettingsScreen()),
                   );
                 },
-                style: TextButton.styleFrom(
+                icon: const Icon(Icons.settings),
+                label: Text(l10n.settings),
+                style: OutlinedButton.styleFrom(
                   foregroundColor: Theme.of(context).brightness == Brightness.light
                       ? Colors.black
                       : null,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  minimumSize: const Size(200, 48),
                 ),
-                child: Text(l10n.settings),
               ),
+              const SizedBox(height: 12),
               
-              TextButton(
+              OutlinedButton.icon(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => SupportScreen()),
                   );
                 },
-                style: TextButton.styleFrom(
+                icon: const Icon(Icons.favorite_border),
+                label: Text(l10n.supportProject),
+                style: OutlinedButton.styleFrom(
                   foregroundColor: Theme.of(context).brightness == Brightness.light
                       ? Colors.black
                       : null,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  minimumSize: const Size(200, 48),
                 ),
-                child: Text(l10n.supportProject),
               ),
 
-              // Debug Button (nur in Debug-Builds sichtbar)
-              if (kDebugMode)
+              if (kDebugMode) ...[
+                const SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -116,6 +125,7 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: const Text('🔧 Database Debug (Debug-Build)'),
                 ),
+              ],
             ],
           ),
         ),

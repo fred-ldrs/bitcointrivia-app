@@ -84,7 +84,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get easy => 'Facile';
 
   @override
-  String get medium => 'Moyen';
+  String get medium => 'Normal';
 
   @override
   String get difficult => 'Difficile';

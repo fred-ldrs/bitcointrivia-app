@@ -24,7 +24,7 @@ class StatisticsService {
       await _saveStatistics({
         'total': {'correct': 0, 'wrong': 0, 'bestStreak': 0},
         'easy': {'correct': 0, 'wrong': 0},
-        'medium': {'correct': 0, 'wrong': 0},
+        'normal': {'correct': 0, 'wrong': 0},
         'difficult': {'correct': 0, 'wrong': 0},
       });
     } else {
@@ -42,7 +42,7 @@ class StatisticsService {
       }
 
       // Ensure all difficulty levels exist
-      for (final difficulty in ['easy', 'medium', 'difficult']) {
+      for (final difficulty in ['easy', 'normal', 'difficult']) {
         if (!updatedStats.containsKey(difficulty)) {
           updatedStats[difficulty] = {'correct': 0, 'wrong': 0};
           needsUpdate = true;
@@ -167,7 +167,7 @@ class StatisticsService {
     await _saveStatistics({
       'total': {'correct': 0, 'wrong': 0, 'bestStreak': 0},
       'easy': {'correct': 0, 'wrong': 0},
-      'medium': {'correct': 0, 'wrong': 0},
+      'normal': {'correct': 0, 'wrong': 0},
       'difficult': {'correct': 0, 'wrong': 0},
     });
   }

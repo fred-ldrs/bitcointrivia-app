@@ -250,10 +250,10 @@ abstract class AppLocalizations {
   /// **'Easy'**
   String get easy;
 
-  /// Medium difficulty label
+  /// Normal difficulty label
   ///
   /// In en, this message translates to:
-  /// **'Medium'**
+  /// **'Normal'**
   String get medium;
 
   /// Hard difficulty label
