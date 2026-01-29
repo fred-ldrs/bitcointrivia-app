@@ -3,6 +3,9 @@ import 'package:provider/provider.dart';
 import '../l10n/app_localizations.dart';
 import '../providers/locale_provider.dart';
 import '../providers/theme_provider.dart';
+import 'privacy_screen.dart';
+import 'impressum_screen.dart';
+import 'feedback_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -25,8 +28,8 @@ class SettingsScreen extends StatelessWidget {
             leading: const Icon(Icons.language),
             title: Text(l10n.language),
             subtitle: Text(_getLanguageName(localeProvider.locale, l10n)),
+            visualDensity: VisualDensity.compact,
           ),
-          const SizedBox(height: 8),
           RadioListTile<Locale>(
             title: Text(l10n.languageEnglish),
             value: const Locale('en'),
@@ -58,15 +61,15 @@ class SettingsScreen extends StatelessWidget {
             },
           ),
           
-          const Divider(height: 32),
+          const Divider(height: 16),
           
           // Theme Section
           ListTile(
             leading: const Icon(Icons.palette),
             title: Text(l10n.theme),
             subtitle: Text(_getThemeName(themeProvider.themePreference, l10n)),
+            visualDensity: VisualDensity.compact,
           ),
-          const SizedBox(height: 8),
           RadioListTile<ThemePreference>(
             title: Text(l10n.themeLight),
             value: ThemePreference.light,
@@ -95,6 +98,52 @@ class SettingsScreen extends StatelessWidget {
               if (value != null) {
                 themeProvider.setThemePreference(value);
               }
+            },
+          ),
+          
+          const Divider(height: 16),
+          
+          // Feedback & Info Section
+          ListTile(
+            leading: const Icon(Icons.comment_outlined),
+            title: Text(l10n.feedback),
+            visualDensity: VisualDensity.compact,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FeedbackScreen()),
+              );
+            },
+          ),
+          
+          const Divider(height: 16),
+          
+          // Legal Section
+          ListTile(
+            leading: const Icon(Icons.gavel),
+            title: Text(l10n.legal),
+            visualDensity: VisualDensity.compact,
+          ),
+          ListTile(
+            title: Text(l10n.privacy),
+            leading: const Icon(Icons.privacy_tip_outlined),
+            visualDensity: VisualDensity.compact,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const PrivacyScreen()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text(l10n.impressum),
+            leading: const Icon(Icons.info_outline),
+            visualDensity: VisualDensity.compact,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ImpressumScreen()),
+              );
             },
           ),
         ],

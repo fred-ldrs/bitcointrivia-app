@@ -33,6 +33,10 @@
   "@impressum": {
     "description": "Impressum/Legal notice menu item"
   },
+  "legal": "Legal",
+  "@legal": {
+    "description": "Legal section header in settings"
+  },
   "supportTitle": "Support the Project",
   "@supportTitle": {
     "description": "Title of the support screen"

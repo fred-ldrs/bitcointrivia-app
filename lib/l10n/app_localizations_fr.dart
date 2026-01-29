@@ -45,6 +45,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get impressum => 'Mentions légales';
 
   @override
+  String get legal => 'Juridique';
+
+  @override
   String get supportTitle => 'Soutenir le projet';
 
   @override

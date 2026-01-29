@@ -45,6 +45,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get impressum => 'Legal Notice';
 
   @override
+  String get legal => 'Legal';
+
+  @override
   String get supportTitle => 'Support the Project';
 
   @override

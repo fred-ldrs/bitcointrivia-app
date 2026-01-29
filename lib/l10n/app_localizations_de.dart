@@ -45,6 +45,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get impressum => 'Impressum';
 
   @override
+  String get legal => 'Rechtliches';
+
+  @override
   String get supportTitle => 'Projekt unterstützen';
 
   @override

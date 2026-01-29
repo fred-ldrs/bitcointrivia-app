@@ -73,20 +73,6 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: Text(l10n.settings),
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const FeedbackScreen()),
-                  );
-                },
-                style: TextButton.styleFrom(
-                  foregroundColor: Theme.of(context).brightness == Brightness.light
-                      ? Colors.black
-                      : null,
-                ),
-                child: Text(l10n.feedback),
-              ),
               
               TextButton(
                 onPressed: () {
@@ -103,37 +89,6 @@ class HomeScreen extends StatelessWidget {
                 child: Text(l10n.supportProject),
               ),
 
-              const SizedBox(height: 40),
-
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const PrivacyScreen()),
-                  );
-                },
-                style: TextButton.styleFrom(
-                  foregroundColor: Theme.of(context).brightness == Brightness.light
-                      ? Colors.black
-                      : null,
-                ),
-                child: Text(l10n.privacy),
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,  
-                    MaterialPageRoute(builder: (context) => ImpressumScreen()),
-                  );
-                },
-                style: TextButton.styleFrom(
-                  foregroundColor: Theme.of(context).brightness == Brightness.light
-                      ? Colors.black
-                      : null,
-                ),
-                child: Text(l10n.impressum),
-              ),
-              
               // Debug Button (nur in Debug-Builds sichtbar)
               if (kDebugMode)
                 TextButton(

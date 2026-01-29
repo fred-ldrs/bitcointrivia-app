@@ -172,6 +172,12 @@ abstract class AppLocalizations {
   /// **'Legal Notice'**
   String get impressum;
 
+  /// Legal section header in settings
+  ///
+  /// In en, this message translates to:
+  /// **'Legal'**
+  String get legal;
+
   /// Title of the support screen
   ///
   /// In en, this message translates to:
