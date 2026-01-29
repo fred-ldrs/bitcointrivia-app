@@ -48,6 +48,68 @@ class AppLocalizationsDe extends AppLocalizations {
   String get legal => 'Rechtliches';
 
   @override
+  String get statistics => 'Statistiken';
+
+  @override
+  String get overallStatistics => 'Gesamtstatistiken';
+
+  @override
+  String get difficultyStatistics => 'Statistiken nach Schwierigkeit';
+
+  @override
+  String get totalQuestions => 'Gesamte Fragen';
+
+  @override
+  String get correctAnswers => 'Richtige Antworten';
+
+  @override
+  String get wrongAnswers => 'Falsche Antworten';
+
+  @override
+  String get accuracy => 'Genauigkeit';
+
+  @override
+  String get bestStreak => 'Beste Serie';
+
+  @override
+  String get total => 'Gesamt';
+
+  @override
+  String get correct => 'Richtig';
+
+  @override
+  String get wrong => 'Falsch';
+
+  @override
+  String get easy => 'Einfach';
+
+  @override
+  String get medium => 'Mittel';
+
+  @override
+  String get difficult => 'Schwer';
+
+  @override
+  String get resetStatistics => 'Statistiken zurücksetzen';
+
+  @override
+  String get resetStatisticsConfirmation =>
+      'Möchtest du wirklich alle Statistiken zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
+
+  @override
+  String get cancel => 'Abbrechen';
+
+  @override
+  String get reset => 'Zurücksetzen';
+
+  @override
+  String get statisticsReset => 'Statistiken wurden zurückgesetzt';
+
+  @override
+  String get statisticsStorageInfo =>
+      'Statistiken werden lokal auf deinem Gerät gespeichert. Wenn du das Gerät wechselst, kannst du die Daten manuell sichern und übertragen.';
+
+  @override
   String get supportTitle => 'Projekt unterstützen';
 
   @override
@@ -267,9 +329,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Möchten Sie das Quiz wirklich verlassen? Ihr Fortschritt geht verloren.';
 
   @override
-  String get cancel => 'Abbrechen';
-
-  @override
   String get quit => 'Verlassen';
 
   @override
@@ -293,15 +352,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get resultKeepPracticing => 'Weiter üben!';
-
-  @override
-  String get correctAnswers => 'Richtige Antworten';
-
-  @override
-  String get wrongAnswers => 'Falsche Antworten';
-
-  @override
-  String get totalQuestions => 'Gesamte Fragen';
 
   @override
   String get errorsByCategory => 'Fehler nach Kategorie';

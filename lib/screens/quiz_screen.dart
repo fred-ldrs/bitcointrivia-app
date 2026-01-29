@@ -4,6 +4,7 @@ import '../models/question.dart';
 import '../models/quiz_config.dart';
 import '../models/quiz_result.dart';
 import '../services/database_service.dart';
+import '../services/statistics_service.dart';
 import 'quiz_result_screen.dart';
 
 class QuizScreen extends StatefulWidget {
@@ -17,6 +18,7 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen> {
   final DatabaseService _dbService = DatabaseService();
+  final StatisticsService _statsService = StatisticsService();
   
   List<Question> _questions = [];
   int _currentQuestionIndex = 0;
@@ -29,6 +31,8 @@ class _QuizScreenState extends State<QuizScreen> {
   
   // Tracking für Ergebnisse
   int _correctAnswers = 0;
+  int _currentStreak = 0;
+  int _bestStreak = 0;
   final Map<String, int> _errorsByCategory = {};
   
   bool _isLoading = true;
@@ -83,14 +87,26 @@ class _QuizScreenState extends State<QuizScreen> {
       _hasAnswered = true;
 
       final isCorrect = answerIndex == _currentCorrectIndex;
+      final currentQuestion = _questions[_currentQuestionIndex];
 
       if (isCorrect) {
         _correctAnswers++;
+        _currentStreak++;
+        if (_currentStreak > _bestStreak) {
+          _bestStreak = _currentStreak;
+        }
       } else {
+        _currentStreak = 0;
         // Fehler in dieser Kategorie zählen
-        final category = _questions[_currentQuestionIndex].category;
+        final category = currentQuestion.category;
         _errorsByCategory[category] = (_errorsByCategory[category] ?? 0) + 1;
       }
+
+      // Record answer in statistics
+      _statsService.recordAnswer(
+        difficulty: currentQuestion.difficulty,
+        isCorrect: isCorrect,
+      );
     });
   }
 
@@ -108,6 +124,9 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   void _finishQuiz() {
+    // Update best streak in statistics
+    _statsService.updateBestStreak(_bestStreak);
+    
     final result = QuizResult(
       totalQuestions: _questions.length,
       correctAnswers: _correctAnswers,

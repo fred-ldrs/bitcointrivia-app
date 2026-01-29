@@ -48,6 +48,68 @@ class AppLocalizationsEn extends AppLocalizations {
   String get legal => 'Legal';
 
   @override
+  String get statistics => 'Statistics';
+
+  @override
+  String get overallStatistics => 'Overall Statistics';
+
+  @override
+  String get difficultyStatistics => 'Statistics by Difficulty';
+
+  @override
+  String get totalQuestions => 'Total Questions';
+
+  @override
+  String get correctAnswers => 'Correct Answers';
+
+  @override
+  String get wrongAnswers => 'Wrong Answers';
+
+  @override
+  String get accuracy => 'Accuracy';
+
+  @override
+  String get bestStreak => 'Best Streak';
+
+  @override
+  String get total => 'Total';
+
+  @override
+  String get correct => 'Correct';
+
+  @override
+  String get wrong => 'Wrong';
+
+  @override
+  String get easy => 'Easy';
+
+  @override
+  String get medium => 'Medium';
+
+  @override
+  String get difficult => 'Hard';
+
+  @override
+  String get resetStatistics => 'Reset Statistics';
+
+  @override
+  String get resetStatisticsConfirmation =>
+      'Are you sure you want to reset all statistics? This action cannot be undone.';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get reset => 'Reset';
+
+  @override
+  String get statisticsReset => 'Statistics have been reset';
+
+  @override
+  String get statisticsStorageInfo =>
+      'Statistics are stored locally on your device. If you change devices, you can manually backup and transfer the data.';
+
+  @override
   String get supportTitle => 'Support the Project';
 
   @override
@@ -264,9 +326,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Are you sure you want to quit? Your progress will be lost.';
 
   @override
-  String get cancel => 'Cancel';
-
-  @override
   String get quit => 'Quit';
 
   @override
@@ -290,15 +349,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get resultKeepPracticing => 'Keep Practicing!';
-
-  @override
-  String get correctAnswers => 'Correct Answers';
-
-  @override
-  String get wrongAnswers => 'Wrong Answers';
-
-  @override
-  String get totalQuestions => 'Total Questions';
 
   @override
   String get errorsByCategory => 'Errors by Category';

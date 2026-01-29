@@ -8,6 +8,7 @@ import 'privacy_screen.dart';
 import 'quiz_config_screen.dart';
 import 'database_debug_screen.dart';
 import 'feedback_screen.dart';
+import 'statistics_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -58,6 +59,21 @@ class HomeScreen extends StatelessWidget {
               ),
 
               const SizedBox(height: 30),
+
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const StatisticsScreen()),
+                  );
+                },
+                style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).brightness == Brightness.light
+                      ? Colors.black
+                      : null,
+                ),
+                child: Text(l10n.statistics),
+              ),
 
               TextButton(
                 onPressed: () {

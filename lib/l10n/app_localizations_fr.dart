@@ -48,6 +48,68 @@ class AppLocalizationsFr extends AppLocalizations {
   String get legal => 'Juridique';
 
   @override
+  String get statistics => 'Statistiques';
+
+  @override
+  String get overallStatistics => 'Statistiques générales';
+
+  @override
+  String get difficultyStatistics => 'Statistiques par difficulté';
+
+  @override
+  String get totalQuestions => 'Questions totales';
+
+  @override
+  String get correctAnswers => 'Réponses correctes';
+
+  @override
+  String get wrongAnswers => 'Réponses incorrectes';
+
+  @override
+  String get accuracy => 'Précision';
+
+  @override
+  String get bestStreak => 'Meilleure série';
+
+  @override
+  String get total => 'Total';
+
+  @override
+  String get correct => 'Correct';
+
+  @override
+  String get wrong => 'Faux';
+
+  @override
+  String get easy => 'Facile';
+
+  @override
+  String get medium => 'Moyen';
+
+  @override
+  String get difficult => 'Difficile';
+
+  @override
+  String get resetStatistics => 'Réinitialiser les statistiques';
+
+  @override
+  String get resetStatisticsConfirmation =>
+      'Êtes-vous sûr de vouloir réinitialiser toutes les statistiques ? Cette action ne peut pas être annulée.';
+
+  @override
+  String get cancel => 'Annuler';
+
+  @override
+  String get reset => 'Réinitialiser';
+
+  @override
+  String get statisticsReset => 'Les statistiques ont été réinitialisées';
+
+  @override
+  String get statisticsStorageInfo =>
+      'Les statistiques sont stockées localement sur votre appareil. Si vous changez d\'appareil, vous pouvez sauvegarder et transférer les données manuellement.';
+
+  @override
   String get supportTitle => 'Soutenir le projet';
 
   @override
@@ -269,9 +331,6 @@ class AppLocalizationsFr extends AppLocalizations {
       'Êtes-vous sûr de vouloir quitter ? Votre progression sera perdue.';
 
   @override
-  String get cancel => 'Annuler';
-
-  @override
   String get quit => 'Quitter';
 
   @override
@@ -295,15 +354,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get resultKeepPracticing => 'Continuez à pratiquer !';
-
-  @override
-  String get correctAnswers => 'Réponses correctes';
-
-  @override
-  String get wrongAnswers => 'Réponses incorrectes';
-
-  @override
-  String get totalQuestions => 'Questions totales';
 
   @override
   String get errorsByCategory => 'Erreurs par catégorie';

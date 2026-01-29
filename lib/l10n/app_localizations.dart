@@ -178,6 +178,126 @@ abstract class AppLocalizations {
   /// **'Legal'**
   String get legal;
 
+  /// Statistics menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics'**
+  String get statistics;
+
+  /// Overall statistics section header
+  ///
+  /// In en, this message translates to:
+  /// **'Overall Statistics'**
+  String get overallStatistics;
+
+  /// Difficulty statistics section header
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics by Difficulty'**
+  String get difficultyStatistics;
+
+  /// Total questions label
+  ///
+  /// In en, this message translates to:
+  /// **'Total Questions'**
+  String get totalQuestions;
+
+  /// Correct answers label
+  ///
+  /// In en, this message translates to:
+  /// **'Correct Answers'**
+  String get correctAnswers;
+
+  /// Wrong answers label
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong Answers'**
+  String get wrongAnswers;
+
+  /// Accuracy percentage label
+  ///
+  /// In en, this message translates to:
+  /// **'Accuracy'**
+  String get accuracy;
+
+  /// Best streak label
+  ///
+  /// In en, this message translates to:
+  /// **'Best Streak'**
+  String get bestStreak;
+
+  /// Total label
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get total;
+
+  /// Correct label (short)
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get correct;
+
+  /// Wrong label (short)
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong'**
+  String get wrong;
+
+  /// Easy difficulty label
+  ///
+  /// In en, this message translates to:
+  /// **'Easy'**
+  String get easy;
+
+  /// Medium difficulty label
+  ///
+  /// In en, this message translates to:
+  /// **'Medium'**
+  String get medium;
+
+  /// Hard difficulty label
+  ///
+  /// In en, this message translates to:
+  /// **'Hard'**
+  String get difficult;
+
+  /// Reset statistics button
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Statistics'**
+  String get resetStatistics;
+
+  /// Reset statistics confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to reset all statistics? This action cannot be undone.'**
+  String get resetStatisticsConfirmation;
+
+  /// Cancel button
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// Reset button
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get reset;
+
+  /// Statistics reset confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics have been reset'**
+  String get statisticsReset;
+
+  /// Information about statistics storage
+  ///
+  /// In en, this message translates to:
+  /// **'Statistics are stored locally on your device. If you change devices, you can manually backup and transfer the data.'**
+  String get statisticsStorageInfo;
+
   /// Title of the support screen
   ///
   /// In en, this message translates to:
@@ -580,12 +700,6 @@ abstract class AppLocalizations {
   /// **'Are you sure you want to quit? Your progress will be lost.'**
   String get quitQuizMessage;
 
-  /// No description provided for @cancel.
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
-  String get cancel;
-
   /// No description provided for @quit.
   ///
   /// In en, this message translates to:
@@ -633,24 +747,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Keep Practicing!'**
   String get resultKeepPracticing;
-
-  /// No description provided for @correctAnswers.
-  ///
-  /// In en, this message translates to:
-  /// **'Correct Answers'**
-  String get correctAnswers;
-
-  /// No description provided for @wrongAnswers.
-  ///
-  /// In en, this message translates to:
-  /// **'Wrong Answers'**
-  String get wrongAnswers;
-
-  /// No description provided for @totalQuestions.
-  ///
-  /// In en, this message translates to:
-  /// **'Total Questions'**
-  String get totalQuestions;
 
   /// No description provided for @errorsByCategory.
   ///

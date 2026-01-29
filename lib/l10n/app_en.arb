@@ -37,6 +37,86 @@
   "@legal": {
     "description": "Legal section header in settings"
   },
+  "statistics": "Statistics",
+  "@statistics": {
+    "description": "Statistics menu item"
+  },
+  "overallStatistics": "Overall Statistics",
+  "@overallStatistics": {
+    "description": "Overall statistics section header"
+  },
+  "difficultyStatistics": "Statistics by Difficulty",
+  "@difficultyStatistics": {
+    "description": "Difficulty statistics section header"
+  },
+  "totalQuestions": "Total Questions",
+  "@totalQuestions": {
+    "description": "Total questions label"
+  },
+  "correctAnswers": "Correct",
+  "@correctAnswers": {
+    "description": "Correct answers label"
+  },
+  "wrongAnswers": "Wrong",
+  "@wrongAnswers": {
+    "description": "Wrong answers label"
+  },
+  "accuracy": "Accuracy",
+  "@accuracy": {
+    "description": "Accuracy percentage label"
+  },
+  "bestStreak": "Best Streak",
+  "@bestStreak": {
+    "description": "Best streak label"
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Total label"
+  },
+  "correct": "Correct",
+  "@correct": {
+    "description": "Correct label (short)"
+  },
+  "wrong": "Wrong",
+  "@wrong": {
+    "description": "Wrong label (short)"
+  },
+  "easy": "Easy",
+  "@easy": {
+    "description": "Easy difficulty label"
+  },
+  "medium": "Medium",
+  "@medium": {
+    "description": "Medium difficulty label"
+  },
+  "difficult": "Hard",
+  "@difficult": {
+    "description": "Hard difficulty label"
+  },
+  "resetStatistics": "Reset Statistics",
+  "@resetStatistics": {
+    "description": "Reset statistics button"
+  },
+  "resetStatisticsConfirmation": "Are you sure you want to reset all statistics? This action cannot be undone.",
+  "@resetStatisticsConfirmation": {
+    "description": "Reset statistics confirmation message"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset button"
+  },
+  "statisticsReset": "Statistics have been reset",
+  "@statisticsReset": {
+    "description": "Statistics reset confirmation message"
+  },
+  "statisticsStorageInfo": "Statistics are stored locally on your device. If you change devices, you can manually backup and transfer the data.",
+  "@statisticsStorageInfo": {
+    "description": "Information about statistics storage"
+  },
   "supportTitle": "Support the Project",
   "@supportTitle": {
     "description": "Title of the support screen"

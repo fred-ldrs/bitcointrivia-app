@@ -5,8 +5,14 @@ import 'screens/home_screen.dart';
 import 'l10n/app_localizations.dart';
 import 'providers/locale_provider.dart';
 import 'providers/theme_provider.dart';
+import 'services/statistics_service.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize statistics service
+  await StatisticsService().init();
+  
   runApp(
     MultiProvider(
       providers: [
