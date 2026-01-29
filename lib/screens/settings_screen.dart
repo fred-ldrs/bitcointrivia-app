@@ -34,6 +34,8 @@ class SettingsScreen extends StatelessWidget {
             title: Text(l10n.languageEnglish),
             value: const Locale('en'),
             groupValue: localeProvider.locale,
+            visualDensity: const VisualDensity(vertical: -3),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
             onChanged: (Locale? value) {
               if (value != null) {
                 localeProvider.setLocale(value);
@@ -44,6 +46,8 @@ class SettingsScreen extends StatelessWidget {
             title: Text(l10n.languageGerman),
             value: const Locale('de'),
             groupValue: localeProvider.locale,
+            visualDensity: const VisualDensity(vertical: -3),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
             onChanged: (Locale? value) {
               if (value != null) {
                 localeProvider.setLocale(value);
@@ -54,6 +58,8 @@ class SettingsScreen extends StatelessWidget {
             title: Text(l10n.languageFrench),
             value: const Locale('fr'),
             groupValue: localeProvider.locale,
+            visualDensity: const VisualDensity(vertical: -3),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
             onChanged: (Locale? value) {
               if (value != null) {
                 localeProvider.setLocale(value);
@@ -74,6 +80,8 @@ class SettingsScreen extends StatelessWidget {
             title: Text(l10n.themeLight),
             value: ThemePreference.light,
             groupValue: themeProvider.themePreference,
+            visualDensity: const VisualDensity(vertical: -3),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
             onChanged: (ThemePreference? value) {
               if (value != null) {
                 themeProvider.setThemePreference(value);
@@ -84,6 +92,8 @@ class SettingsScreen extends StatelessWidget {
             title: Text(l10n.themeDark),
             value: ThemePreference.dark,
             groupValue: themeProvider.themePreference,
+            visualDensity: const VisualDensity(vertical: -3),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
             onChanged: (ThemePreference? value) {
               if (value != null) {
                 themeProvider.setThemePreference(value);
@@ -94,6 +104,8 @@ class SettingsScreen extends StatelessWidget {
             title: Text(l10n.themeSystem),
             value: ThemePreference.system,
             groupValue: themeProvider.themePreference,
+            visualDensity: const VisualDensity(vertical: -3),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
             onChanged: (ThemePreference? value) {
               if (value != null) {
                 themeProvider.setThemePreference(value);
